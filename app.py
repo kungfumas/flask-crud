@@ -3,6 +3,8 @@ import sqlite3 as sql
 app=Flask(__name__)
 
 @app.route("/")
+def awal():
+    return "Uji coba flask crud sqllite"
 @app.route("/index")
 def index():
     con=sql.connect("db_web.db")
